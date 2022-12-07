@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Codigotchi</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <header>
+            <img src="images/logo.png" alt="Logo Coding Week">
+        </header>
+
+        <main>
+            <section class="codigotchi">
+                <img src="images/codigotchi.png" alt="Codigotchi">
+                <div id="screen" class="codigotchi-screen"></div>
+            </section>
+
+            <section id="panel-data" class="panels">
+                <div class="panel panel-microphone">
+                    <button id="mic">
+                        <img src="images/mic.png" alt="microphone">
+                    </button>
+                    <h2>Attiva il Microfono</h2>
+                </div>
+
+                <div class="panel panel-commands">
+                    <h2>Interagisci coi comandi vocali!</h2>
+                    <h3>Comandi supportati</h3>
+                    <div class="commands">
+                        <ul>
+                            <li>Mangia</li>
+                            <li>Balla</li>
+                            <li>Dormi</li>
+                        </ul>
+                    </div>
+                </div>
+
+            </section>
+        </main>
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>

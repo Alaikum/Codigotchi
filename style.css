@@ -1,0 +1,133 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    height: 100%;
+    background: linear-gradient(#828bf8, #3e3fed);
+    background-attachment: fixed;
+    font-family: 'Roboto', sans-serif;
+    color: black;
+}
+
+
+
+main {
+    text-align: center;
+}
+
+h2 {
+    font-size: 20px;
+    margin-bottom: 16px;
+}
+
+h3 {
+    font-size: 14px;
+    color: grey;
+    margin-bottom: 12px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+button {
+    border: none;
+    background-color: #f71568;
+    padding: 10px 16px;
+    margin: 16px;
+    border-radius: 10px;
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+    padding: 16px;
+}
+
+header img {
+    width: 56px;
+}
+
+.codigotchi {
+    width: 230px;
+    margin: 0 auto;
+    position: relative;
+    margin-bottom: 24px;
+}
+
+
+.codigotchi-screen {
+    position: absolute;
+    top: 120px;
+    left: 62px;
+    width: 112px;
+    height: 112px;
+    background-image: url(images/static.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+}
+
+.codigotchi-screen_dormi {
+    background-image: url(images/dormi.gif);
+}
+
+.codigotchi-screen_balla {
+    background-image: url(images/balla.gif);
+}
+
+.codigotchi-screen_mangia {
+    background-image: url(images/mangia.gif);
+}
+
+
+.commands ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+.commands ul li {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.panels {
+    position: relative;
+}
+
+.panel {
+    background-color: white;
+    border-radius: 16px;
+    padding: 18px;
+    transition: transform 0.5sec;
+    width: 100%;
+}
+
+
+.panel-microphone {}
+
+.panel-commands {
+    position: absolute;
+    top: 0;
+    left: 0;
+    /* display: none; */
+    visibility: hidden;
+    transform: scale(0.1);
+}
+
+.listening .panel-microphone {
+    /* display: none; */
+    visibility: hidden;
+    transform: scale(0.1);
+}
+
+.listening .panel-commands {
+    /* display: block; */
+    visibility: visible;
+    transform: scale(1);
+}
