@@ -18,7 +18,7 @@ let textCmd = document.getElementById('comandi')
 
 
 const commands = ['mangia', 'balla', 'dormi']
-const commandsFr = ['mange', 'danse', 'dormir']
+const commandsFr = ['mange', 'danse', 'dors']
 // const commandsEn = ['mangia', 'balla', 'dormi']
 
 const SpeechRecognition = window.speechRecognition || window.webkitSpeechRecognition
@@ -34,7 +34,7 @@ valLin.addEventListener('change', (event) => {
     if (valLin.value == 'fr-FR') {
         textMangia.textContent = 'Mange'
         textBalla.textContent = 'Danse'
-        textDormi.textContent = 'Dormir'
+        textDormi.textContent = 'Dors'
         textMicro.textContent = 'Activer le Micro'
         textInse.textContent = 'Interagissez avec les commandes vocales'
         textCmd.textContent = 'Commandes prises en charge'
@@ -57,10 +57,11 @@ function onStart() {
     console.log(recog)
     console.log('valore', lingua)
     console.log('start listening...');
-
     panelData.classList.add('listening');
+
     recog.start()
     document.getElementById('debug').innerHTML = ""
+
 }
 
 function onResult(e) {
@@ -88,7 +89,7 @@ function onResult(e) {
         if (action == 'danse') {
             action = 'balla'
         }
-        if (action == 'dormir') {
+        if (action == 'dors') {
             action = 'dormi'
         }
 
