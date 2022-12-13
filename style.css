@@ -106,6 +106,7 @@ header img {
     padding: 18px;
     transition: transform 0.5sec;
     width: 100%;
+  
 }
 
 
@@ -118,6 +119,7 @@ header img {
     /* display: none; */
     visibility: hidden;
     transform: scale(0.1);
+    
 }
 
 .listening .panel-microphone {
@@ -130,4 +132,14 @@ header img {
     /* display: block; */
     visibility: visible;
     transform: scale(1);
+}
+
+.debug{
+  padding: 1rem;
+    color: white;
+}
+
+#debug{
+    background-color: aquamarine;
+    color: black;
 }

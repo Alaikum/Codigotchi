@@ -20,6 +20,11 @@
         <header>
             <img src="images/logo.png" alt="Logo Coding Week">
             <p>Di Adamo</p>
+            <select name="" id="lingua">
+                <option value="it-IT">Italiano</option>
+                <!-- <option value="en-EN">Inglese</option> -->
+                <option value="fr-FR">Francese</option>
+            </select>
         </header>
 
         <main>
@@ -33,21 +38,27 @@
                     <button id="mic">
                         <img src="images/mic.png" alt="microphone">
                     </button>
-                    <h2>Attiva il Microfono</h2>
+                    <h2 id="microfono">Attiva il Microfono <span id="result"></span></h2>
                 </div>
 
                 <div class="panel panel-commands">
-                    <h2>Interagisci coi comandi vocali!</h2>
-                    <h3>Comandi supportati</h3>
+                    <h2 id="inserisci">Interagisci coi comandi vocali!</h2>
+                    <h3 id="comandi">Comandi supportati</h3>
                     <div class="commands">
                         <ul>
-                            <li>Mangia</li>
-                            <li>Balla</li>
-                            <li>Dormi</li>
+                            <li id="mangia">Mangia</li>
+                            <li id="balla">Balla</li>
+                            <li id="dormi">Dormi</li>
                         </ul>
                     </div>
                 </div>
 
+            </section>
+
+            <section>
+                <div class="debug">Debug
+                    <p>Comando Vocale: <span id="debug"></span></p>
+                </div>
             </section>
         </main>
     </div>
